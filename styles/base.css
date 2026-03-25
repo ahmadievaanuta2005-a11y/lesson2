@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    margin: 0;
+    color: #111111;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #FDFDFD;
+}
+
+
+.button {
+    border: 0;
+    outline: none;
+    height: 44px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform .08s ease, opacity .12s ease;
+    background: #DC6133;  /* ← новый оранжевый цвет */
+    color: #111111;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #C04E2A;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #FADE6E;
+    color: #787878;
+    transform: none;
+}
+
+.button.button-white {
+    background: #ffffff;
+    border: 1px solid #111111;
+}
+
+.button.button-white:hover {
+    background: rgb(241 241 241);
+}
